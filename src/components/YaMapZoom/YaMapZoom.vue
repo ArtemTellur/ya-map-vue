@@ -36,12 +36,6 @@ export default {
 
       this.mapInstance.setZoom(currentZoom - 1)
     }
-  },
-  mounted () {
-    debugger
-  },
-  beforeDestroy () {
-    debugger
   }
 }
 </script>

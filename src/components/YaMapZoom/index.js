@@ -15,13 +15,10 @@ export const getZoomLayout = (ymaps, instance) => {
           mapInstance: instance
         }
       }).$mount('#map-zoom')
-
-      this.clear()
     },
     clear () {
       this.constructor.superclass.clear.call(this)
 
-      debugger
       this.instance.$destroy()
     }
   })
