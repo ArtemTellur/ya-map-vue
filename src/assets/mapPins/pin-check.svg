@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="40px" viewBox="0 0 30 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>pin-check</title>
+    <desc>Created with Sketch.</desc>
+    <g id="2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="70-–-maps-–-elements" transform="translate(-240.000000, -397.000000)">
+            <g id="pin-check" transform="translate(240.000000, 397.000000)">
+                <path d="M15,40 C15,40 27,36.4651668 27,32.7142857 C27,30.1106576 21.627417,28 15,28 C8.372583,28 3,30.1106576 3,32.7142857 C3,36.4719514 15,40 15,40 Z" id="shadow" fill="#3A352B" opacity="0.200000003"></path>
+                <path d="M14.9994502,38.7051747 C15.5010159,38.2813133 16.0610762,37.7875045 16.6649296,37.2292783 C18.3925131,35.6322311 20.1205307,33.8427353 21.7311807,31.9062781 C26.2833184,26.4333202 29,20.9026666 29,15.7142857 C29,7.5776722 22.7213129,1 15,1 C7.2786871,1 1,7.5776722 1,15.7142857 C1,20.9126072 3.71659021,26.4451225 8.26862205,31.9145217 C9.87917832,33.8496522 11.6070948,35.6372195 13.3345724,37.2319985 C13.9381932,37.7892513 14.4980484,38.2821407 14.9994502,38.7051747 Z" id="Mask" stroke="#CCCCCC" stroke-width="2" fill="#FFFFFF"></path>
+                <g id="Check" transform="translate(5.000000, 6.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+                    <polygon fill="#333333" points="18.2 5.88 16.9294118 4.6 8.75 12.84 5.07058824 9.13333333 3.8 10.4133333 8.75 15.4"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
