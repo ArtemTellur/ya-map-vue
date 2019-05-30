@@ -9,14 +9,14 @@
 <script>
 export default {
   props: {
-    context: {
-      type: Object,
-      required: true
-    }
+    // context: {
+    //   type: Object,
+    //   required: true
+    // }
   },
   methods: {
     closeBalloon () {
-      this.context.events.fire('userclose')
+      // this.context.events.fire('userclose')
     }
   }
 }

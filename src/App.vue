@@ -15,7 +15,7 @@
               :cluster="cluster"
               v-for="(placemark, index) in placemarkList"
               :key="index"
-              v-bind="{ ...placemark, icon: { ...placemark.icon } }"
+              v-bind="{ ...placemark }"
             />
           </template>
         </ya-map-cluster>

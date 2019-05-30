@@ -31,12 +31,10 @@ export default {
   mounted() {
     const placemark = new this.ymaps.Placemark(
       this.coordinates,
-      this.balloon,
+      {},
       {
         ...this.icon,
-        ...{
-          balloonLayout: getBalloonLayout(this.ymaps),
-        }
+        balloonLayout: getBalloonLayout(this.ymaps, this.map)
       }
     )
     this.cluster.add(placemark)
