@@ -7,7 +7,9 @@ const mountComponent = Component => {
 
   const wrapper = document.createElement("div");
   wrapper.appendChild(elem);
-  return elem
+  const str = wrapper.innerHTML;
+
+  return str
 }
 
 export const buildLayout = Component => (ymaps, mapInstance) => {
