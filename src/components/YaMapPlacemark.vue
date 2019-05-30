@@ -34,7 +34,7 @@ export default {
       {},
       {
         ...this.icon,
-        balloonLayout: getBalloonLayout(this.ymaps, this.map)
+        balloonLayout: getBalloonLayout(this.ymaps)
       }
     )
     this.cluster.add(placemark)

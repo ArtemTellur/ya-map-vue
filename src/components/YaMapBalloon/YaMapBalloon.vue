@@ -3,17 +3,11 @@
     <div class="balloon-content">
       Много балунов
     </div>
-    <span class="balloon-close" @click="closeBalloon">&#10006;</span>
+    <button class="balloon-close" @click="closeBalloon">&#10006;</button>
   </div>
 </template>
 <script>
 export default {
-  props: {
-    // context: {
-    //   type: Object,
-    //   required: true
-    // }
-  },
   methods: {
     closeBalloon () {
       this.$emit('balloon-close')
