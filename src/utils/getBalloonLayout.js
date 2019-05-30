@@ -7,14 +7,10 @@ const mountComponent = Component => {
 
   const wrapper = document.createElement("div");
   wrapper.appendChild(elem);
-  const str = wrapper.innerHTML;
-
-  return str
+  return elem
 }
 
 export const buildLayout = Component => (ymaps, mapInstance) => {
-  console.log({ v: mapInstance.balloon.close });
-  
   return ymaps.templateLayoutFactory.createClass(mountComponent(Component), {
     clear () {
       this.constructor.superclass.clear.call(this)

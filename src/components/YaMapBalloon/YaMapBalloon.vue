@@ -16,7 +16,7 @@ export default {
   },
   methods: {
     closeBalloon () {
-      // this.context.events.fire('userclose')
+      this.$emit('balloon-close')
     }
   }
 }
