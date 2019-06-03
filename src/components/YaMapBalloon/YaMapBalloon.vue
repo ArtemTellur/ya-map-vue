@@ -3,7 +3,7 @@
     <div class="balloon-content">
       Много балунов
     </div>
-    <button class="balloon-close" @click="closeBalloon">&#10006;</button>
+    <span class="balloon-close" @click="closeBalloon">&#10006;</span>
   </div>
 </template>
 <script>

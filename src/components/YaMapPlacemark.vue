@@ -34,7 +34,32 @@ export default {
       {},
       {
         ...this.icon,
-        balloonLayout: getBalloonLayout(this.ymaps)
+        balloonLayout: getBalloonLayout(this.ymaps, {
+          events: [
+            {
+              name: 'balloon-close',
+              listener: () => {
+                this.map.balloon.close()
+              }
+            }
+          ],
+          layoutOptions: {
+            getShape (Layout) {
+              const element = this.getElement()
+
+              if (!element) {
+                return Layout.superclass.getShape.call(this)
+              }
+              const balloon = element.querySelector('.balloon')
+
+              return new ymaps.shape.Rectangle(
+                new ymaps.geometry.pixel.Rectangle([
+                  [balloon.offsetLeft, balloon.offsetTop],
+                  [balloon.offsetLeft + balloon.offsetWidth, balloon.offsetTop + balloon.offsetHeight + 10]
+                ]))
+            }
+          }
+        })
       }
     )
     this.cluster.add(placemark)

@@ -7,6 +7,7 @@
       @mapLoaded="onCreate"
     >
       <template slot-scope="{ ymaps, map }">
+        <ya-map-controls :ymaps="ymaps" :map="map"/>
         <ya-map-cluster :ymaps="ymaps" :map="map">
           <template slot-scope="{ cluster }">
             <ya-map-placemark
@@ -28,7 +29,7 @@
 import YaMapLoader from './components/YaMapLoader';
 import YaMapPlacemark from './components/YaMapPlacemark';
 import YaMapCluster from './components/YaMapCluster'
-import { getZoomLayout } from './components/YaMapZoom'
+import YaMapControls from './components/YaMapControls'
 import placemarkList from './placemarkList';
 
 export default {
@@ -48,26 +49,13 @@ export default {
     onCreate (ymaps, mapInstance) {
       this.mapInstance = mapInstance
       this.ymaps = ymaps
-
-      this.createControls()
-    },
-    createControls () {
-      const zoomControl = new ymaps.control.ZoomControl({
-        options: {
-          layout: getZoomLayout(this.ymaps, this.mapInstance)
-        }
-      })
-
-      this.mapInstance.controls.add(zoomControl, {
-        top: 0,
-        right: 0
-      })
     }
   },
   components: {
     YaMapLoader,
     YaMapPlacemark,
-    YaMapCluster
+    YaMapCluster,
+    YaMapControls
   }
 }
 </script>

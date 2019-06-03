@@ -19,22 +19,12 @@ export default {
       map: null
     }
   },
-  props: {
-    mapInstance: {
-      type: Object,
-      required: true
-    }
-  },
   methods: {
     zoomIn () {
-      const currentZoom = this.mapInstance.getZoom()
-
-      this.mapInstance.setZoom(currentZoom + 1)
+      this.$emit('map-zoom-in')
     },
     zoomOut () {
-      const currentZoom = this.mapInstance.getZoom()
-
-      this.mapInstance.setZoom(currentZoom - 1)
+      this.$emit('map-zoom-out')
     }
   }
 }
