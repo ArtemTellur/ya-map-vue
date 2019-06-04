@@ -4,6 +4,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'МВидео'
   }
 },
 {
@@ -12,6 +15,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 },
 {
@@ -20,6 +26,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 },
 {
@@ -28,6 +37,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 },
 {
@@ -36,6 +48,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 },
 {
@@ -44,6 +59,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 },
 {
@@ -52,6 +70,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 },
 {
@@ -60,6 +81,9 @@ export default [{
     iconLayout: 'default#image',
     iconImageHref: require('./assets/mapPins/pin-24.svg'),
     iconImageSize: [30, 40]
+  },
+  shop: {
+    name: 'Эльдорадо'
   }
 }
 ]

@@ -1,13 +1,19 @@
 <template>
   <div class="balloon">
     <div class="balloon-content">
-      Много балунов
+      {{ shop.name }}
     </div>
     <span class="balloon-close" @click="closeBalloon">&#10006;</span>
   </div>
 </template>
 <script>
 export default {
+  props: {
+    shop: {
+      type: Object,
+      default: () => ({})
+    }
+  },
   methods: {
     closeBalloon () {
       this.$emit('balloon-close')

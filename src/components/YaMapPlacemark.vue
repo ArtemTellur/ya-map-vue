@@ -26,6 +26,10 @@ export default {
     icon: {
       type: Object,
       default: () => ({})
+    },
+    shop: {
+      type: Object,
+      default: () => ({})
     }
   },
   mounted() {
@@ -57,6 +61,11 @@ export default {
                   [balloon.offsetLeft, balloon.offsetTop],
                   [balloon.offsetLeft + balloon.offsetWidth, balloon.offsetTop + balloon.offsetHeight + 10]
                 ]))
+            }
+          },
+          componentOptions: {
+            propsData: {
+              shop: this.shop
             }
           }
         })
